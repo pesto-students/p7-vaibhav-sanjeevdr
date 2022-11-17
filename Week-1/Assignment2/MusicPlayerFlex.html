@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+  <style>
+    .flex-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .flex-container-main {
+      display: flex;
+    }
+
+    .menu-container {
+      display: flex;
+      flex-direction: column;
+      background-color: #d9d8d4;
+    }
+
+    .body1 {
+      width: 100%;
+    }
+
+    .body2 {
+      display: flex;
+      background-color: black;
+    }
+
+    .menu1,
+    .menu2,
+    .menu3,
+    .menu4,
+    .menu5,
+    .menu6,
+    .menu7,
+    .menu8 {
+      height: 2rem;
+      width: 1.5rem;
+      display: block;
+      padding-left: 0.5rem;
+      padding-right: 0rem;
+      background-color: #d9d8d4;
+    }
+
+    .item1 {
+      background-color: black;
+      display: block;
+      margin-left: 0.9375rem;
+      margin-top: 0.625rem;
+
+      height: 6.875rem;
+      width: 6.25rem;
+    }
+
+    .item2 {
+      font-family: Lato;
+      background-color: black;
+      margin-top: 0.625rem;
+      margin-left: 1.25rem;
+      text-align: left;
+      font-size: 1rem;
+      color: white;
+    }
+
+    pre {
+      font-family: Lato;
+      display: block;
+      font-size: 0.625rem;
+    }
+
+    .item2pre {
+      font-family: Lato;
+      display: block;
+      font-size: 0.625rem;
+      margin-top: 1.25rem;
+    }
+
+    .item3 {
+      background-color: white;
+      text-align: center;
+      font-size: 0.75rem;
+      color: black;
+    }
+
+    .songs {
+      display: flex;
+      flex-direction: column;
+      font-family: Lato;
+      width: 100%;
+    }
+
+    .songs>div {
+      display: flex;
+      border: 0rem;
+    }
+
+    .songs div>div {
+      text-align: left;
+      border: 0rem;
+      /* border: 0.0625rem solid #ddd; */
+      padding: 0.125rem;
+      padding-left: 3.125rem;
+      width: 25%;
+    }
+
+    .songs>div:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    .songs div:hover {
+      background-color: #ddd;
+    }
+
+    .item4 {
+      background-color: #34a8eb;
+      text-align: left;
+      font-size: 0.9375rem;
+      color: white;
+    }
+
+    .song {
+      display: flex;
+      background-color: #34a8eb;
+      font-family: Lato;
+      border-collapse: collapse;
+      color: white;
+    }
+
+    .songMenu {
+      width: 10%;
+      margin: auto;
+      padding-top: 0.3125rem;
+      padding-left: 0.3125rem;
+      padding-right: 0rem;
+    }
+
+    .item4p {
+      font-family: Lato;
+      padding-top: 0.3125rem;
+      display: block;
+      font-size: 0.625rem;
+      text-align: left;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="flex-container">
+    <div class="flex-container-main">
+
+      <div class="menu-container">
+        <div class="menu1"><i class="las la-bars"></i></div>
+        <div class="menu2"><i class="las la-home"></i></div>
+        <div class="menu3"><i class="las la-search"></i></div>
+        <div class="menu4"><i class="las la-volume-up"></i></div>
+        <div class="menu5"><i class="las la-user"></i></div>
+        <div class="menu6"><i class="las la-cog"></i></div>
+        <div class="menu7"><i class="las la-spotify"></i></div>
+        <div class="menu8"><i class="las la-soundcloud"></i></div>
+      </div>
+
+      <div class="body1">
+        <div class="body2">
+          <div class="item1"><img src="https://vif1g.csb.app/src/assets/cattyboard.jpg" alt="Catty Board" 
+               style="width:6.25rem;height:6.25rem;">
+          </div>
+          <div class="item2">
+            CattyBoard Top Hundred Single Charts(11.06.36)
+            <pre>Unknown Artist
+2016.Charts.100songs
+        </pre>
+            <pre class="item2pre">
+<i class="las la-play"></i>Play all  <i class="las la-plus"></i>Add to  <i class="las la-ellipsis-h"></i>More
+        </pre>
+          </div>
+        </div>
+        <div class="item3">
+          <div id="songs" class="songs">
+            <div>
+              <div>1.One Dance</div>
+              <div>Crake feat Catkid & Cyla </div>
+              <div>2.54</div>
+              <div>CATTY CLOUD SYNC</div>
+            </div>
+            <div>
+              <div>2.Panda</div>
+              <div>Cattee</div>
+              <div>4:06</div>
+              <div>CATTY CLOUD SYNC</div>
+            </div>
+            <div>
+              <div>3.Can't stop the feeling!</div>
+              <div>Catin Cimberlake</div>
+              <div>3:56</div>
+              <div>CATTY CLOUD SYNC</div>
+            </div>
+            <div>
+              <div>4.Work From Home </div>
+              <div>Cat Harmony feat Colla</div>
+              <div>3:34</div>
+              <div>CATTY CLOUD SYNC</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="song" class="song">
+      <div style="width:3.125rem;" class="songMenu">
+        <img src="https://vif1g.csb.app/src/assets/cattyboard.jpg" alt="Catty Board" style="width:3.125rem;height:3.125rem;" >
+      </div>
+      <div style="width:40%;">
+        <p class="item4p">
+          If It Ain't Love <br>
+          Catson Derulo
+        </p>
+      </div>
+      <div class="songMenu"><i class="las la-step-backward"></i> </div>
+      <div class="songMenu"><i class="las la-play"></i></div>
+      <div class="songMenu"><i class="las la-step-forward"></i></div>
+      <div class="songMenu"><i class="las la-undo-alt"></i></div>
+      <div class="songMenu"><i class="las la-random"></i></div>
+    </div>
+  </div>
+</body>
+
+</html>
